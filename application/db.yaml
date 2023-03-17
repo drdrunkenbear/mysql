@@ -6,9 +6,8 @@ metadata:
     "gslab": lamp
 spec:
   storageClassName: "longhorn"
-  resources:
-    requests:
-      storage: 1Gi
+  capacity:
+    storage: 5Gi
   volumeMode: Filesystem
   accessModes:
     - ReadWriteOnce
