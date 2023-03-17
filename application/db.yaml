@@ -4,9 +4,8 @@ metadata:
   name: database
   labels:
     "gslab": lamp
-  annotations:
-    volume.aplha.kubernetes.io/storage-class: longhorn
 spec:
+  storageClassName: "longhorn"
   resources:
     requests:
       storage: 1Gi
