@@ -7,9 +7,11 @@ metadata:
 spec:
   storageClassName: "longhorn"
   volumeMode: Filesystem
-  volumeName: pvc-test
   accessModes:
     - ReadWriteOnce
+  selector:
+   matchlabels:
+    volumename: pvc-test
 ---
 apiVersion: apps/v1
 kind: Deployment
